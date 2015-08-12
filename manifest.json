@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "Whatsapp Extension",
+  "description": "This extension shows Whatsapp messages using Whatsapp Web.",
+  "version": "1.0",
+  "permissions": [
+    "http://*/",
+    "https://*/"
+  ],
+  "browser_action": {
+    "default_icon": "images/icon.png",
+    "default_popup": "index.html",
+    "default_title": "Whatsapp"
+  },
+  "content_security_policy": "script-src 'self' https://web.whatsapp.com https://ajax.googleapis.com; object-src 'self'"
+}
